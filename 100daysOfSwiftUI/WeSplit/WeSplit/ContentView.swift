@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var buttonCount = 0
     
     var body: some View {
         NavigationView {
@@ -28,6 +29,10 @@ struct ContentView: View {
                     Text("Hello, World!")
                     Text("Hello, World!")
                     Text("Hello, World!")
+                }
+                
+                Button("Tap Count : \(buttonCount)") {
+                    buttonCount += 1
                 }
             }
             .navigationTitle("Swift UI")
