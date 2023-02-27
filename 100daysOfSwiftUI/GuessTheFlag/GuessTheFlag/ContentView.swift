@@ -8,35 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingAlert = false
+    
     var body: some View {
-        VStack {
-            Button("Button 1") { }
-                .buttonStyle(.bordered)
-            Button("Button 2", role:  .destructive) { }
-                .buttonStyle(.bordered)
-            Button("Button 3") { }
-                .buttonStyle(.borderedProminent)
-            Button("Button 4", role: .destructive) { }
-                .buttonStyle(.borderedProminent)
-                .tint(.mint)
+        Button("Show Alert") {
+            showingAlert = true
+        }/// isPresented가 alert가 dismiss될 때 showingAlert를 false로 만들어줌 -> two-way binding ('$')
+        .alert("Important Message", isPresented: $showingAlert)  {
+            Button("Delete", role: .destructive) { }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("Please read this")
         }
-
-        Button {
-            print("text")
-        } label: {
-            Image(systemName: "pencil")
-            Text("Tap me!")
-                .padding()
-                .foregroundColor(.white)
-                .background(.blue)
-        }
-        
-        Button {
-            print("text")
-        } label: {
-            Label("Tap me!", systemImage: "pencil")
-        }
-        
     }
 }
 
