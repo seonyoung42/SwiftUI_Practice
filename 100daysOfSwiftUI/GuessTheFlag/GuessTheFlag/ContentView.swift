@@ -9,14 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LinearGradient(gradient: Gradient(stops: [Gradient.Stop(color: .white, location: 0.45), Gradient.Stop(color: .blue, location: 0.55)]),
-                       startPoint: .top,
-                       endPoint: .bottom)
-            .ignoresSafeArea()
+        VStack {
+            Button("Button 1") { }
+                .buttonStyle(.bordered)
+            Button("Button 2", role:  .destructive) { }
+                .buttonStyle(.bordered)
+            Button("Button 3") { }
+                .buttonStyle(.borderedProminent)
+            Button("Button 4", role: .destructive) { }
+                .buttonStyle(.borderedProminent)
+                .tint(.mint)
+        }
+
+        Button {
+            print("text")
+        } label: {
+            Image(systemName: "pencil")
+            Text("Tap me!")
+                .padding()
+                .foregroundColor(.white)
+                .background(.blue)
+        }
         
-        RadialGradient(gradient: Gradient(colors: [.blue, .black]), center: .center, startRadius: 0, endRadius: 200)
+        Button {
+            print("text")
+        } label: {
+            Label("Tap me!", systemImage: "pencil")
+        }
         
-        AngularGradient(gradient: Gradient(colors: [.red, .yellow, .blue, .black, .pink]), center: .center)
     }
 }
 
