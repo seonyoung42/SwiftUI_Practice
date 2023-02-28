@@ -1,6 +1,8 @@
 # GuessTheFlag
 
-## 배운 내용
+## 구현 화면
+<img src = "https://user-images.githubusercontent.com/77603632/221774568-376097b9-bf9d-4cd1-b4eb-e19a191f11df.png" width="200" height="400"> 
+
 ### 1. VStack, HStack, ZStack
 
 ```
@@ -24,6 +26,7 @@ ZStack {
 + HStack : 수평으로 쌓는 Stack
 + ZStack : 3차원으로 위로 쌓는 Stack
   + ZStack에서 먼저 들어가 컴포넌트가 아래에 위치함. This is other text 아래에 Hello, world! 가 위치하게 된다.
+  + Gradient를 사용해서 배경에 효과르 주고 싶을 때 ZStack를 사용한다.
 
 
 ### 2. ForegroundStyle, [Meterial](https://developer.apple.com/documentation/swiftui/material)
