@@ -3,8 +3,6 @@
 ## 구현 화면
 <img src = "https://user-images.githubusercontent.com/77603632/221133162-8a9360f5-8283-4670-8597-aa00433c5e9c.png" width="200" height="400"> 
 
-## 배운 내용
-
 ### [1. Form](https://developer.apple.com/documentation/swiftui/form)
 SwiftUI는 Form 안에 포함된 View들을 플랫폼에 적절한 스타일을 적용하여 그룹화 한다.
 
