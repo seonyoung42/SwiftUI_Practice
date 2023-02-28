@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var message = ""
+    @State private var score = 0
     
     @State private var countries = ["estonia", "france", "germany", "ireland",
                                     "italy", "monaco", "nigeria", "poland",
@@ -60,7 +62,7 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score: ??? ")
+                Text("Score: \(score)")
                     .foregroundColor(.white)
                     .font(.title.bold())
                 
@@ -71,12 +73,19 @@ struct ContentView: View {
         .alert(scoreTitle, isPresented: $showingScore) {
             Button("Continue", action: askQuestion)
         } message: {
-            Text("Your scroe is ???")
+            Text(message)
         }
     }
     
     func flagTapped(_ number: Int) {
-        scoreTitle = number == correctAnswer ? "Correct" : "Wrong"
+        if number == correctAnswer {
+            scoreTitle = "Correct"
+            score += 1
+            message = "Your score is \(score)"
+        } else {
+            scoreTitle = "Wrong"
+            message = "That's the flag of \(countries[number])"
+        }
         showingScore = true
     }
     
