@@ -26,6 +26,10 @@ var body: some View {
      }
 ```
 + Form은 최대 10개의 컴포넌트를 포함할 수 있다.
+     + <details> <summary>컴포넌트를 10개까지만 포함할 수 있는 이유</summary> 
+         Form 안의 view들을 만드는 ViewBuilder 구조체의 buildBlock메서드에서 10개가지의 view 파라미터로 받을 수 있기 때문이다. 
+         <img width="831" alt="스크린샷 2023-03-02 오후 8 56 11" src="https://user-images.githubusercontent.com/77603632/222421982-3758531f-f66b-4cbe-a173-6bc292b46cdf.png">
+     </details> 
 + 10개 이상의 컴포넌트를 Form에 넣고 싶다면 Group 또는 Section을 사용할 수 있다.
 + Group간 분리를 두고 싶다면 Section을 사용하면 된다.
 
