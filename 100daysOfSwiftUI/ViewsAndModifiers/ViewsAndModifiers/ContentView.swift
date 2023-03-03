@@ -8,16 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var useRedText = true
     
-    /// 어떤 View가 있을 지 모르기 때문에 some 붙임
-    /// 정확한 타입인 ModifiedContent<ModifiedContent< ... 를 작성해도 되지만 이것은 너무 비효율적임
     var body: some View {
-        Button("Hello, world!") {
-            print(type(of: self.body))
-            ///ModifiedContent<ModifiedContent<Button<Text>, _FrameLayout>, _BackgroundStyleModifier<Color>>
+        Button("Hello, world") {
+            useRedText.toggle()
         }
-        .frame(width: 100, height: 100)
-        .background(.red)
+        .foregroundColor(useRedText ? .red : .blue)
     }
 }
 
