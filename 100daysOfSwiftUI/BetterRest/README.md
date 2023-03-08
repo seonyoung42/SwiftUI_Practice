@@ -1,5 +1,8 @@
 # BetterRest
 
+## 구현 화면
+<img src = "https://user-images.githubusercontent.com/77603632/223638024-43d1c78c-f798-48d3-b8e3-de86db069972.png" width="200" height="400"> 
+
 ## 1. Stepper
 ```
 Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
@@ -41,3 +44,17 @@ Text(Date.now.formatted(date: .long, time: .shortened))
     + standarad: 시간 보여줌 (Ex 오후 9:13:22)
     + omitted: 시간 제거
  
+## 4. Static var
+
+```
+@State private var wakeUp = defaultWakeTime
+
+static var defaultWakeTime: Date {
+   var components = DateComponents()
+   components.hour = 7
+   components.minute = 0
+   return Calendar.current.date(from: components) ?? Date.now
+}
+```
++ defaultWakeTime 앞에 static을 붙여줌으로써 Swift에게 이 변수가 ContentView struct에 속하는 변수임을 알려준다.
+   + 이는 defaultWakeTime 이 원하는 곳에서 언제든지 사용될 수 있게 한다.
