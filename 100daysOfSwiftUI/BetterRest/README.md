@@ -1,7 +1,7 @@
 # BetterRest
 
 ## 구현 화면
-<img src = "https://user-images.githubusercontent.com/77603632/223638024-43d1c78c-f798-48d3-b8e3-de86db069972.png" width="200" height="400"> 
+<img src = "https://user-images.githubusercontent.com/77603632/223647778-c8063736-2cfc-4961-92af-8929667e03fb.png" width="200" height="400">
 
 ## 1. Stepper
 ```
