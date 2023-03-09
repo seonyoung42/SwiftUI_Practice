@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    let people = ["Finn", "Leia", "Luke", "Rey"]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            Section("Section 1") {
+                Text("Static row 1")
+                Text("Static row 2")
+            }
+            
+            ForEach(people, id:\.self) {
+                Text($0)
+            }
+            
+            Text("Static row")
+        }
     }
 }
 
