@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct OtherView: View {
+    
     var body: some View {
-        Text("OtherView")
+        NavigationView {
+            List {
+                ForEach(Menu.allCases) { section in
+                    Section(header: Text(section.title)) {
+                        ForEach(section.menu, id: \.hashValue) { raw in
+                            NavigationLink(raw, destination: Text(raw))
+                        }
+                    }
+                }
+            }
+            .listStyle(GroupedListStyle())
+                .navigationTitle("Other")
+                .toolbar {
+                    NavigationLink(
+                        destination: Text("destination"),
+                        label: { Image(systemName: "gear")}
+                    )
+                }
+        }
     }
 }
 
 #Preview {
     OtherView()
 }
+
