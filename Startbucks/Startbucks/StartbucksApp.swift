@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct StartbucksApp: App {
+struct StartbucksApp: App { // APP = AppDelegate + SceneDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
