@@ -24,7 +24,7 @@ struct OtherView: View {
                 .navigationTitle("Other")
                 .toolbar {
                     NavigationLink(
-                        destination: Text("destination"),
+                        destination: SettingView(),
                         label: { Image(systemName: "gear")}
                     )
                 }

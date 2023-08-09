@@ -21,6 +21,7 @@
 		2BC5AC8A2A839FF6004A7951 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC892A839FF6004A7951 /* Event.swift */; };
 		2BC5AC8E2A83B26B004A7951 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC8D2A83B26A004A7951 /* OtherView.swift */; };
 		2BC5AC902A83B3FC004A7951 /* SettingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC8F2A83B3FC004A7951 /* SettingMenu.swift */; };
+		2BC5AC922A83B823004A7951 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC912A83B823004A7951 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		2BC5AC892A839FF6004A7951 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		2BC5AC8D2A83B26A004A7951 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		2BC5AC8F2A83B3FC004A7951 /* SettingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMenu.swift; sourceTree = "<group>"; };
+		2BC5AC912A83B823004A7951 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				2BC5AC8D2A83B26A004A7951 /* OtherView.swift */,
 				2BC5AC8F2A83B3FC004A7951 /* SettingMenu.swift */,
+				2BC5AC912A83B823004A7951 /* SettingView.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				2BC5AC8E2A83B26B004A7951 /* OtherView.swift in Sources */,
 				2BC5AC7C2A83973D004A7951 /* HomeView.swift in Sources */,
 				2BC5AC6D2A8386F5004A7951 /* MainTabView.swift in Sources */,
+				2BC5AC922A83B823004A7951 /* SettingView.swift in Sources */,
 				2BC5AC842A839A9D004A7951 /* MenuSuggestSectionView.swift in Sources */,
 				2BC5AC882A839E7A004A7951 /* EventSectionView.swift in Sources */,
 				2BC5AC6B2A8386F5004A7951 /* StartbucksApp.swift in Sources */,
