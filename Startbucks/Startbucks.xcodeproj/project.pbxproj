@@ -19,6 +19,7 @@
 		2BC5AC862A839B3F004A7951 /* CoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC852A839B3F004A7951 /* CoffeeMenu.swift */; };
 		2BC5AC882A839E7A004A7951 /* EventSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC872A839E7A004A7951 /* EventSectionView.swift */; };
 		2BC5AC8A2A839FF6004A7951 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC892A839FF6004A7951 /* Event.swift */; };
+		2BC5AC8E2A83B26B004A7951 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC8D2A83B26A004A7951 /* OtherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2BC5AC852A839B3F004A7951 /* CoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenu.swift; sourceTree = "<group>"; };
 		2BC5AC872A839E7A004A7951 /* EventSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSectionView.swift; sourceTree = "<group>"; };
 		2BC5AC892A839FF6004A7951 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		2BC5AC8D2A83B26A004A7951 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +71,11 @@
 			children = (
 				2BC5AC6A2A8386F5004A7951 /* StartbucksApp.swift */,
 				2BC5AC812A839A2D004A7951 /* User.swift */,
-				2BC5AC7E2A839789004A7951 /* Tab */,
-				2BC5AC7D2A839778004A7951 /* Home */,
-				2BC5AC6E2A8386F9004A7951 /* Assets.xcassets */,
-				2BC5AC702A8386F9004A7951 /* Preview Content */,
 				2BC5AC852A839B3F004A7951 /* CoffeeMenu.swift */,
 				2BC5AC892A839FF6004A7951 /* Event.swift */,
+				2BC5AC6E2A8386F9004A7951 /* Assets.xcassets */,
+				2BC5AC8B2A83B239004A7951 /* Scenes */,
+				2BC5AC702A8386F9004A7951 /* Preview Content */,
 			);
 			path = Startbucks;
 			sourceTree = "<group>";
@@ -105,6 +106,24 @@
 				2BC5AC792A838AB2004A7951 /* Tab.swift */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		2BC5AC8B2A83B239004A7951 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5AC7E2A839789004A7951 /* Tab */,
+				2BC5AC7D2A839778004A7951 /* Home */,
+				2BC5AC8C2A83B25A004A7951 /* Other */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2BC5AC8C2A83B25A004A7951 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5AC8D2A83B26A004A7951 /* OtherView.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +201,7 @@
 				2BC5AC802A8397A1004A7951 /* HomeHeaderView.swift in Sources */,
 				2BC5AC822A839A2D004A7951 /* User.swift in Sources */,
 				2BC5AC8A2A839FF6004A7951 /* Event.swift in Sources */,
+				2BC5AC8E2A83B26B004A7951 /* OtherView.swift in Sources */,
 				2BC5AC7C2A83973D004A7951 /* HomeView.swift in Sources */,
 				2BC5AC6D2A8386F5004A7951 /* MainTabView.swift in Sources */,
 				2BC5AC842A839A9D004A7951 /* MenuSuggestSectionView.swift in Sources */,

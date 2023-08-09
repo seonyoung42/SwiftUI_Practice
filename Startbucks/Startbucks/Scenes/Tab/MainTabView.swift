@@ -24,12 +24,6 @@ struct MainTabView: View {
     }
 }
 
-struct OtherView: View {
-    var body: some View {
-        Text("OtherView")
-    }
-}
-
 #Preview {
     MainTabView()
 }
