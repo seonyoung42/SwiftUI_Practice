@@ -22,6 +22,7 @@
 		2BC5AC8E2A83B26B004A7951 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC8D2A83B26A004A7951 /* OtherView.swift */; };
 		2BC5AC902A83B3FC004A7951 /* SettingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC8F2A83B3FC004A7951 /* SettingMenu.swift */; };
 		2BC5AC922A83B823004A7951 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC912A83B823004A7951 /* SettingView.swift */; };
+		2BC5AC942A83C243004A7951 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5AC932A83C242004A7951 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		2BC5AC8D2A83B26A004A7951 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		2BC5AC8F2A83B3FC004A7951 /* SettingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMenu.swift; sourceTree = "<group>"; };
 		2BC5AC912A83B823004A7951 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		2BC5AC932A83C242004A7951 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				2BC5AC7B2A83973D004A7951 /* HomeView.swift */,
+				2BC5AC932A83C242004A7951 /* HomeViewModel.swift */,
 				2BC5AC7F2A8397A1004A7951 /* HomeHeaderView.swift */,
 				2BC5AC832A839A9C004A7951 /* MenuSuggestSectionView.swift */,
 				2BC5AC872A839E7A004A7951 /* EventSectionView.swift */,
@@ -211,6 +214,7 @@
 				2BC5AC7C2A83973D004A7951 /* HomeView.swift in Sources */,
 				2BC5AC6D2A8386F5004A7951 /* MainTabView.swift in Sources */,
 				2BC5AC922A83B823004A7951 /* SettingView.swift in Sources */,
+				2BC5AC942A83C243004A7951 /* HomeViewModel.swift in Sources */,
 				2BC5AC842A839A9D004A7951 /* MenuSuggestSectionView.swift in Sources */,
 				2BC5AC882A839E7A004A7951 /* EventSectionView.swift in Sources */,
 				2BC5AC6B2A8386F5004A7951 /* StartbucksApp.swift in Sources */,
