@@ -24,15 +24,9 @@ struct MainTabView: View {
     }
 }
 
-struct HomeView: View {
-    var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
-    }
-}
-
 struct OtherView: View {
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        Text("OtherView")
     }
 }
 
