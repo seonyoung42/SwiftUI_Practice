@@ -18,7 +18,6 @@ struct HomeHeaderView: View {
                 Button(action: {}, label: {
                     Image(systemName: "arrow.2.circlepath")
                 })
-                .accentColor(.green)
             }
             HStack {
                 Button(action: {}, label: {

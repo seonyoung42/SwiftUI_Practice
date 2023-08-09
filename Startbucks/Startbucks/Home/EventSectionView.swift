@@ -15,7 +15,6 @@ struct EventSectionView: View {
                     .font(.headline)
                 Spacer()
                 Button("See all") { }
-                    .accentColor(.green)
                     .font(.subheadline)
             }
             .padding(.horizontal, 16.0)

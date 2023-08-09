@@ -12,6 +12,7 @@ struct StartbucksApp: App { // APP = AppDelegate + SceneDelegate
     var body: some Scene {
         WindowGroup {
             MainTabView()
+                .accentColor(.green)
         }
     }
 }
