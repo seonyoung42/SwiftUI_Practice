@@ -14,9 +14,11 @@ struct HomeHeaderView: View {
                 Text("\(User.shared.username)님 \n반갑습니다!😘")
                     .font(.largeTitle)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                 Button(action: {}, label: {
                     Image(systemName: "arrow.2.circlepath")
                 })
+                .accentColor(.green)
             }
             HStack {
                 Button(action: {}, label: {
