@@ -9,8 +9,8 @@ import Foundation
 
 struct CenterAPI {
     static let scheme = "https"
-    static let host = "api.odcloud.kr/api"
-    static let path = "/15077586/v1/centers"
+    static let host = "api.odcloud.kr"
+    static let path = "/api/15077586/v1/centers"
     
     func getCenterListComponents() -> URLComponents {
         var components = URLComponents()
