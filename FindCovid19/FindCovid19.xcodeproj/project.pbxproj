@@ -11,6 +11,10 @@
 		2BC5ACA42A84A297004A7951 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACA32A84A297004A7951 /* ContentView.swift */; };
 		2BC5ACA62A84A2A0004A7951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5ACA52A84A2A0004A7951 /* Assets.xcassets */; };
 		2BC5ACA92A84A2A0004A7951 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5ACA82A84A2A0004A7951 /* Preview Assets.xcassets */; };
+		2BC5ACB02A84C494004A7951 /* CenterAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACAF2A84C494004A7951 /* CenterAPIResponse.swift */; };
+		2BC5ACB22A84C4B2004A7951 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACB12A84C4B2004A7951 /* Center.swift */; };
+		2BC5ACB62A84C5FF004A7951 /* CenterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACB52A84C5FF004A7951 /* CenterAPI.swift */; };
+		2BC5ACBA2A84C6A6004A7951 /* CenterNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACB92A84C6A6004A7951 /* CenterNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		2BC5ACA32A84A297004A7951 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BC5ACA52A84A2A0004A7951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC5ACA82A84A2A0004A7951 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BC5ACAF2A84C494004A7951 /* CenterAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPIResponse.swift; sourceTree = "<group>"; };
+		2BC5ACB12A84C4B2004A7951 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
+		2BC5ACB52A84C5FF004A7951 /* CenterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPI.swift; sourceTree = "<group>"; };
+		2BC5ACB92A84C6A6004A7951 /* CenterNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,12 @@
 		2BC5ACA02A84A297004A7951 /* FindCovid19 */ = {
 			isa = PBXGroup;
 			children = (
+				2BC5ACB72A84C605004A7951 /* Entities */,
 				2BC5ACA12A84A297004A7951 /* FindCovid19App.swift */,
 				2BC5ACA32A84A297004A7951 /* ContentView.swift */,
 				2BC5ACA52A84A2A0004A7951 /* Assets.xcassets */,
 				2BC5ACA72A84A2A0004A7951 /* Preview Content */,
+				2BC5ACB82A84C60D004A7951 /* Network */,
 			);
 			path = FindCovid19;
 			sourceTree = "<group>";
@@ -65,6 +75,24 @@
 				2BC5ACA82A84A2A0004A7951 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BC5ACB72A84C605004A7951 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5ACB12A84C4B2004A7951 /* Center.swift */,
+				2BC5ACAF2A84C494004A7951 /* CenterAPIResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2BC5ACB82A84C60D004A7951 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5ACB52A84C5FF004A7951 /* CenterAPI.swift */,
+				2BC5ACB92A84C6A6004A7951 /* CenterNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC5ACB22A84C4B2004A7951 /* Center.swift in Sources */,
+				2BC5ACBA2A84C6A6004A7951 /* CenterNetwork.swift in Sources */,
+				2BC5ACB62A84C5FF004A7951 /* CenterAPI.swift in Sources */,
 				2BC5ACA42A84A297004A7951 /* ContentView.swift in Sources */,
+				2BC5ACB02A84C494004A7951 /* CenterAPIResponse.swift in Sources */,
 				2BC5ACA22A84A297004A7951 /* FindCovid19App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
