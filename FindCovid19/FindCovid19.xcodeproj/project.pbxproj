@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2BC5ACA22A84A297004A7951 /* FindCovid19App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACA12A84A297004A7951 /* FindCovid19App.swift */; };
-		2BC5ACA42A84A297004A7951 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACA32A84A297004A7951 /* ContentView.swift */; };
 		2BC5ACA62A84A2A0004A7951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5ACA52A84A2A0004A7951 /* Assets.xcassets */; };
 		2BC5ACA92A84A2A0004A7951 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5ACA82A84A2A0004A7951 /* Preview Assets.xcassets */; };
 		2BC5ACB02A84C494004A7951 /* CenterAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACAF2A84C494004A7951 /* CenterAPIResponse.swift */; };
@@ -18,12 +17,15 @@
 		2BC5ACBC2A84C8D0004A7951 /* SelectRegionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACBB2A84C8D0004A7951 /* SelectRegionViewModel.swift */; };
 		2BC5ACBE2A84C8E0004A7951 /* SelectRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACBD2A84C8E0004A7951 /* SelectRegionView.swift */; };
 		2BC5ACC02A84CA17004A7951 /* SelectRegionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACBF2A84CA17004A7951 /* SelectRegionItem.swift */; };
+		2BC5ACC32A84CC69004A7951 /* CenterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACC22A84CC69004A7951 /* CenterRow.swift */; };
+		2BC5ACC52A84CD97004A7951 /* CenterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACC42A84CD97004A7951 /* CenterList.swift */; };
+		2BC5ACC92A84D0A7004A7951 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACC82A84D0A7004A7951 /* MapView.swift */; };
+		2BC5ACCB2A84D22C004A7951 /* CenterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5ACCA2A84D22C004A7951 /* CenterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BC5AC9E2A84A297004A7951 /* FindCovid19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCovid19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC5ACA12A84A297004A7951 /* FindCovid19App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCovid19App.swift; sourceTree = "<group>"; };
-		2BC5ACA32A84A297004A7951 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BC5ACA52A84A2A0004A7951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC5ACA82A84A2A0004A7951 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BC5ACAF2A84C494004A7951 /* CenterAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPIResponse.swift; sourceTree = "<group>"; };
@@ -33,6 +35,10 @@
 		2BC5ACBB2A84C8D0004A7951 /* SelectRegionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionViewModel.swift; sourceTree = "<group>"; };
 		2BC5ACBD2A84C8E0004A7951 /* SelectRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionView.swift; sourceTree = "<group>"; };
 		2BC5ACBF2A84CA17004A7951 /* SelectRegionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionItem.swift; sourceTree = "<group>"; };
+		2BC5ACC22A84CC69004A7951 /* CenterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterRow.swift; sourceTree = "<group>"; };
+		2BC5ACC42A84CD97004A7951 /* CenterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterList.swift; sourceTree = "<group>"; };
+		2BC5ACC82A84D0A7004A7951 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2BC5ACCA2A84D22C004A7951 /* CenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +75,6 @@
 				2BC5ACB72A84C605004A7951 /* Entities */,
 				2BC5ACB82A84C60D004A7951 /* Network */,
 				2BC5ACA12A84A297004A7951 /* FindCovid19App.swift */,
-				2BC5ACA32A84A297004A7951 /* ContentView.swift */,
 				2BC5ACA52A84A2A0004A7951 /* Assets.xcassets */,
 				2BC5ACA72A84A2A0004A7951 /* Preview Content */,
 			);
@@ -105,11 +110,31 @@
 		2BC5ACC12A84CAE5004A7951 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				2BC5ACBB2A84C8D0004A7951 /* SelectRegionViewModel.swift */,
-				2BC5ACBD2A84C8E0004A7951 /* SelectRegionView.swift */,
-				2BC5ACBF2A84CA17004A7951 /* SelectRegionItem.swift */,
+				2BC5ACC72A84D08D004A7951 /* CenterList */,
+				2BC5ACC62A84D076004A7951 /* SelectRegionView */,
+				2BC5ACC82A84D0A7004A7951 /* MapView.swift */,
+				2BC5ACCA2A84D22C004A7951 /* CenterDetailView.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2BC5ACC62A84D076004A7951 /* SelectRegionView */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5ACBB2A84C8D0004A7951 /* SelectRegionViewModel.swift */,
+				2BC5ACBF2A84CA17004A7951 /* SelectRegionItem.swift */,
+				2BC5ACBD2A84C8E0004A7951 /* SelectRegionView.swift */,
+			);
+			path = SelectRegionView;
+			sourceTree = "<group>";
+		};
+		2BC5ACC72A84D08D004A7951 /* CenterList */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5ACC22A84CC69004A7951 /* CenterRow.swift */,
+				2BC5ACC42A84CD97004A7951 /* CenterList.swift */,
+			);
+			path = CenterList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,11 +208,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC5ACBE2A84C8E0004A7951 /* SelectRegionView.swift in Sources */,
+				2BC5ACC92A84D0A7004A7951 /* MapView.swift in Sources */,
 				2BC5ACC02A84CA17004A7951 /* SelectRegionItem.swift in Sources */,
+				2BC5ACC52A84CD97004A7951 /* CenterList.swift in Sources */,
 				2BC5ACB22A84C4B2004A7951 /* Center.swift in Sources */,
+				2BC5ACCB2A84D22C004A7951 /* CenterDetailView.swift in Sources */,
+				2BC5ACC32A84CC69004A7951 /* CenterRow.swift in Sources */,
 				2BC5ACBA2A84C6A6004A7951 /* CenterNetwork.swift in Sources */,
 				2BC5ACB62A84C5FF004A7951 /* CenterAPI.swift in Sources */,
-				2BC5ACA42A84A297004A7951 /* ContentView.swift in Sources */,
 				2BC5ACB02A84C494004A7951 /* CenterAPIResponse.swift in Sources */,
 				2BC5ACBC2A84C8D0004A7951 /* SelectRegionViewModel.swift in Sources */,
 				2BC5ACA22A84A297004A7951 /* FindCovid19App.swift in Sources */,
