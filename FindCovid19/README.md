@@ -23,8 +23,8 @@
 
 ## Combine vs RxSwift
 
-## Publiser vc Observable
-### - Publiser
+### 1. Publisher vs Observable
+#### - Publisher
 
 ```
 public protocol Publisher { }
@@ -39,9 +39,7 @@ associatedtype Failure: Error
 + 값 타입인 struct
 + Ouput과 Failure를 이미 가지고 있음
 
-<br>
-
-### - Observable
+#### - Observable
 ```
 class Observable: ObservableType { }
 
@@ -53,7 +51,7 @@ class Observable<Element>
 
 <br>
 
-## Operators
+### 2. Operators
 > Combine에만 있는 Operators
 > + tryMap, tryFilter, tryCompactMap 등 try를 제공하는 operator가 있음
 > + Error 를 더 쉽게 헨들링할 수 있도록 도와줌
@@ -64,14 +62,14 @@ func map<T>(_ transform: (Output) -> T) -> Just<T>
 func tryMap<T>(_ transform: (Output) throws -> T) -> Result<T, Error>.Publisher
 ```
 
-## Subject 
-> + PassthrouSubject - PublishSubject
-> +        X         - ReplaySubject
-> + CurrentValueSubject - BehaviorSubject
-
 <br>
 
-### - PassthroughSubject - PublishSubject
+### 3. Subject 
+> + PassthrouSubject - PublishSubject
+> + X         - ReplaySubject
+> + CurrentValueSubject - BehaviorSubject
+
+#### - PassthroughSubject - PublishSubject
 
 ```
 class PassthroughSubject<Output, Failure> {
@@ -82,9 +80,8 @@ class PublishSubject<Element> {
     override init() { }
 }
 ```
-<br>
 
-### - CurrentValueSubject - BehaviorSubject
+#### - CurrentValueSubject - BehaviorSubject
 
 ```
 class CurrentValueSubject<Output, Failure> {
@@ -96,7 +93,9 @@ class BehaviorSubject<Element> {
 }
 ```
 
-## Cancellable - Disposable
+<br>
+
+### 4. Cancellable - Disposable
 
 ```
 let cancellables = Set<Cancellable>()
@@ -118,7 +117,9 @@ Observable.just(1)
     .disposed(by: disposeBag)
 ```
 
-## Thread Handling
+<br>
+
+### 5. Thread Handling
 
 ```
 Just(1)
