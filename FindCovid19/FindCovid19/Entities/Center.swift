@@ -11,15 +11,14 @@ import CoreLocation
 struct Center: Hashable, Codable {
     let id: Int
     let sido: Sido
-    let sigungu: String
     let facilityName: String
     let address: String
     let lat: String
     let lng: String
-    let centerType: String
+    let centerType: CenterType
     let phoneNumber: String
     
-    enum CenterType: String, Decodable {
+    enum CenterType: String, Codable {
         case central = "중앙/권역"
         case local = "지역"
     }
